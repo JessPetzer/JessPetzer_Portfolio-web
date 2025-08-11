@@ -1,0 +1,1677 @@
+/* -------------------------GENERAL STYLING------------------------- */
+html {
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* CUSTOM GOOGLE FONTS */
+
+.ntr-regular {
+    font-family: "NTR", sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+}
+
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tiktok-sans-regular {
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100;
+}
+
+/* HEADER STYLES */
+
+.currentPage, #dropDown-menuCurrent{
+    border-bottom: solid black 2px;
+}
+
+#dropDown-menuCurrent:hover{
+    border-bottom: solid #2F586E 1px;
+}
+
+header {
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+#headerLogo{
+    height: 40vh;
+    width: 20vw;
+    background-image: url(../images/misc_graphics/completed_brand_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 5%;
+    top: 30px;
+    filter: drop-shadow(1px 1px 0.5px rgba(255, 255, 255, 0.699));
+}
+
+#social-top {
+    position: absolute;
+    top: 33.5%;
+    right: 4%;
+}
+
+#linkedIn_link_icon-top, #instagram_link_icon-top, #behance_link_icon-top {
+    vertical-align: bottom;
+    padding-right: 5px;
+    height: 70px;
+    width: 4.5vw;
+    display: inline-block;
+    padding-left: 8px;
+    background-repeat: no-repeat;
+}
+
+#linkedIn_link_icon-top {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/top/linkedIn_link_icon_top-normal.png);
+}
+
+#linkedIn_link_icon-top:hover {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/top/linkedIn_link_icon_top-hover.png);
+}
+
+#instagram_link_icon-top {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/top/instagram_link_icon_top-normal.png);
+}
+
+#instagram_link_icon-top:hover {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/top/instagram_link_icon_top-hover.png);
+}
+
+#behance_link_icon-top {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/top/behance_link_icon_top-normal.png);
+}
+
+#behance_link_icon-top:hover {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/top/behance_link_icon_top-hover.png);
+}
+
+#topLinks ul li a:hover, #bottomLinks a:hover {
+    color: #2F586E;
+}
+
+#topLinks{
+    position: absolute;
+    bottom: 35%;
+    left: 31%;
+    font-size: 100%;
+    letter-spacing: 4px;
+    line-height: 150%;
+    font-family: 'NTR';
+    font-weight: 900;
+    width: 40vw;
+}
+
+#topLinks ul a{
+   color:#09151f;
+}
+
+#topLinks ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+#topLinks ul li {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px; 
+    width: 20%; 
+}
+
+#topLinks ul li#current-subPage a {
+    color: black;
+}
+
+#dropDown-menu:hover > a,
+#dropDown-menu:hover .subMenu,
+#dropDown-menu:hover > a,
+#dropDown-menu:hover .subMenu_nonActive,
+#dropDown-menuCurrent:hover > a,
+#dropDown-menuCurrent:hover .subMenu,
+#dropDown-menuCurrent:hover > a,
+#dropDown-menuCurrent:hover .subMenu_nonActive
+{
+    color:#2F586E;
+}
+
+.subMenu_nonActive li, .subMenu li{
+    bottom: 70px;
+    right: 8vw;
+    white-space: nowrap;
+}
+
+#current-subPage a{
+    border: 2px solid black; 
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 10px;
+}
+
+#topLinks ul li ul li{
+    text-align: left;
+    position: relative;
+    width: 20vw;
+    font-weight: 100;
+    margin-top: 7%;
+
+}
+
+#topLinks ul li ul li a {
+    text-align: left;
+    position: relative;
+    color: white;
+}
+
+#topLinks ul li ul li a:hover {
+    color: #2F586E;
+}
+
+/* FOOTER STYLES */
+
+#footer_home {
+  background-color: black;
+  height: 250px;
+  position: relative;
+  top: 100px;
+}
+
+#footer_about, #footer_contact, #footer_webDesign, #footer_graphicDesign, #footer_animation, #footer_photography{
+  background-color: black;
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+#footer_about{
+  margin-top: 100px;
+}
+
+#footerContent {
+  height: 250px;
+}
+
+#footerContent img {
+    opacity: 90%;
+    width: 165px;
+    padding-top: 50px;
+    padding-left: 10vw;
+}
+
+#footerContent p {
+    text-align: center;
+    font-family: "NTR", sans-serif;
+    bottom: 100px;
+    position: relative;
+    color: white;
+}
+
+#topLinks a, #topLinks ul li {
+    text-decoration: none;
+}
+
+#social-bottom {
+    position: relative;
+    bottom: 170px;
+    left: 77%;
+    width: 20vw;
+}
+
+#linkedIn_link_icon-bottom, #instagram_link_icon-bottom, #behance_link_icon-bottom {
+    padding-right: 5px;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding-left: 8px;
+}
+
+#linkedIn_link_icon-bottom {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/bottom/linkedIn_link_icon_bottom-normal.png);
+}
+
+#linkedIn_link_icon-bottom:hover {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/bottom/linkedIn_link_icon_bottom-hover.png);
+}
+
+#instagram_link_icon-bottom {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/bottom/instagram_link_icon_bottom-normal.png);
+}
+
+#instagram_link_icon-bottom:hover {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/bottom/instagram_link_icon_bottom-hover.png);
+}
+
+#behance_link_icon-bottom {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/bottom/behance_link_icon_bottom-normal.png);
+}
+
+#behance_link_icon-bottom:hover {
+    background-image: url(../images/logo_favicon_icons/social_media-icons/bottom/behance_link_icon_bottom-hover.png);
+}
+
+/* DROPDOWN HOVER MENU */
+
+
+.subMenu {
+    position: absolute;
+    display: none;
+    background-color: rgba(9, 22, 32, 100%);
+    left: 17vw;
+    top: calc(100% + 30px);
+    width: 18.5vw;
+    z-index: 10;
+}
+
+.subMenu_nonActive {
+    position: absolute;
+    display: none;
+    background-color: rgba(9, 22, 32, 1); /* not 100% */
+    left: 16vw;
+    top: calc(100% + 30px); /* move it 50vh below the parent */
+    z-index: 10;
+}
+
+#dropDown-menu a {
+    width: 115px;
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px; 
+    left: 50%;
+    bottom: 1%;
+}
+
+
+
+#dropDown-menu:hover .subMenu_nonActive,
+#dropDown-menu:hover .subMenu, 
+#dropDown-menuCurrent:hover .subMenu {
+    display: block;
+    height: 140px;
+    padding-top: 100px;
+    font-family: "NTR";
+    font-size: 1.1em;
+    letter-spacing: 4px;
+    line-height: 25px;
+    text-align: left;
+    width: 270px;
+}
+
+#dropDown-menuCurrent li{
+    position: relative;
+    left: 14%;
+}
+
+/* HAMBURGER MENU */
+
+#responsiveMenu, #responsiveClose {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    display: none;
+}
+
+.hover-bridge {
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 30%;
+    height: 30px; /* vertical gap size; adjust as needed */
+    background: transparent;
+    z-index: 15;
+}
+
+.dropdown-hover-wrapper:hover .subMenu_nonActive,
+.dropdown-hover-wrapper:hover .subMenu {
+  display: block;
+}
+
+.dropdown-hover-wrapper {
+  position: relative;
+}
+
+#responsiveMenu{
+    background-image: url(../images/misc_graphics/menu.png);
+}
+
+#responsiveClose{
+    background-image: url(../images/misc_graphics/close.png);
+    z-index: 2;
+    display: none;
+}
+
+/*-------------------------MAIN PAGE-------------------------*/
+
+.parallax{
+    background-image: url(../images/backgroundOne.png);
+    height: 150vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2vh;
+    background-attachment: fixed;
+    background-position: center;
+    top: 3vh;
+    position: relative;
+}
+
+.headings_card{
+    background-color: black;
+    background-size: cover;
+    width: 75vw;
+    height: 41vh;
+    left: 12%;
+    top: 310px;
+    z-index: 1;
+    position: absolute;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    vertical-align: middle;
+    text-align: center;
+}
+
+h1{
+    font-family:"TikTok Sans", sans-serif;
+    font-size: 6vw;
+    font-weight: 500;
+    margin:0;
+    padding-top: 20vh;
+    line-height: 10%;
+    color: white;
+}
+
+#typewriter::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#middleContent {
+    background-color: #2F586E;
+    width: 98vw;
+    height: 120vh;
+    bottom: 200px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+    transition: all 0.2s ease-in-out 0.2s;
+    transform-origin: center center;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative; /* no absolute top unless you truly need it */
+}
+
+#middleContent:hover {
+    transform: scale(1.018, 1.013);
+}
+
+#middleContent img {
+    border-radius: 500px;
+    height: 85vh;
+    padding-left: 7vw;
+    position: relative;
+}
+
+#middleContent .text-content{
+    font-family: "TikTok Sans", sans-serif;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.text-content h1 {
+    font-size: 3.3em;
+    width: 50vw;
+    padding-bottom: 100px;
+    filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.699));
+    letter-spacing: 2px;
+    margin-left: 70px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    font-weight: lighter;
+    font-family: "NTR", sans-serif;
+    letter-spacing: 3px;
+    width: 32vw;
+    line-height: 5.5vh;
+    overflow-y: auto;
+    height: 280px; 
+    padding-right: 40px;
+    text-align: left;
+    margin-left: 90px;
+}
+
+.text-content p a{
+    font-weight: 900;
+    color: #d09738;
+    text-decoration: none;
+}
+
+.text-content p::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.text-content p::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 6px;
+}
+
+.text-content p::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 6px;
+}
+
+.text-content p a:hover{
+    text-decoration: underline;
+}
+
+.portfolioHeading{
+    color: black;
+    left: 10vw;
+    position: relative;
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+    padding-top: 80px;
+    padding-bottom: 5vh;
+    width: 60vw;
+}
+
+#article_links{
+  padding-bottom: 210px;
+}
+
+.animated-lineHome {
+  height: 0.7vh;                 
+  width: 8vw;                  
+  background-color: black;    
+  left: 10vw;     
+  position: relative;              
+  transition: width 1s ease-out;
+  margin-top: 3.6vh;
+}
+
+.animated-lineHome.visible {
+  width: 23%;  
+  transition-delay: 0.5s;                  
+}
+
+article div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 140px;
+    top: 100px;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    padding-left: 2vw;
+    padding-bottom: 10vh;
+    right: 1vw;
+    top: 5vh;
+   
+}
+
+.image {
+    position: relative;
+    width: 38vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.image-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* stack h1, h2, button */
+    justify-content: center; /* vertical centering */
+    align-items: center; /* horizontal centering */
+    text-align: center;
+    inset: 0;    
+    z-index: 1; /* above the image */
+    left: 300px;
+    top: 10vh;
+}
+
+.image-content h1 {
+    font-size: 2.5em;
+    letter-spacing: 4.5px;
+    font-weight: 800;
+    font-family: "NTR", sans-serif;
+    color: #2F586E;
+    width: 30vw;
+    filter: drop-shadow(1px 1px 0.5px white);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.image-content h2 {
+    font-size: 1.2vw;
+    letter-spacing: 4px;
+    line-height: 150%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: white;
+    filter: drop-shadow(2px 2px 0.5px black);
+    margin-bottom: 1.5rem;
+    width: 250px;
+    padding-bottom: 10vh;
+}
+
+.button .topView, .button .bottomView {
+    font-family: "NTR", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.35vw;
+    font-size: 1.25em;
+    background-color: black;
+    color: white;
+    width: 10vw;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    vertical-align: middle;
+    line-height: 9vh; /* same as height */
+}
+
+.button .topView:hover, .button .bottomView:hover {
+    background-color: #2F586E;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    z-index: 0;
+    filter: grayscale(100%);
+}
+
+#graphicDesign-img::before {
+    background-image: url("../images/cover_imgs/graphic-design.png");
+}
+
+#animation-img::before {
+    background-image: url("../images/cover_imgs/teary_eye-animation.gif");
+}
+
+#photography-img::before {
+    background-image: url("../images/cover_imgs/photographyPage_cover.png");
+}
+
+#webDesign-img::before  {
+    background-image: url("../images/cover_imgs/web-design.png");
+}
+
+#graphic-design, #animation, #photography, #web-design {
+    position: relative;
+    display: inline-block;
+}
+
+#graphic-design:hover #graphicDesign-img::before,
+#animation:hover #animation-img::before,
+#photography:hover #photography-img::before,
+#web-design:hover #webDesign-img::before {
+    transform: scale(1.1); 
+    filter: blur(10px);
+}
+
+.image-content h1, .image-content h2,
+.button .topView, .button .bottomView {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out; 
+}
+
+#graphic-design:hover .image-content h1, #graphic-design:hover .image-content h2 , #graphic-design:hover .button .topView,
+#animation:hover .image-content h1, #animation:hover .image-content h2, #animation:hover .button .topView,
+#photography:hover .image-content h1, #photography:hover .image-content h2, #photography:hover .button .bottomView,
+#web-design:hover .image-content h1, #web-design:hover .image-content h2, #web-design:hover .button .bottomView {
+    display: block;
+    opacity: 1;
+}
+
+
+/*---------------WORK PORTFOLIO PAGES---------------*/
+
+.mainHeadings_photography h1{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 3.5vw;
+    padding-top: 19%;
+    padding-bottom: 8%;
+    text-align: left;
+    letter-spacing: 0.5vw;
+    width: 40vw;
+    line-height: 9vh;
+    padding-left: 12%;
+    color: white;
+}
+
+.mainHeadings_webDesign h1{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 3.5vw;
+    padding-top: 24.2%;
+    padding-bottom: 8%;
+    text-align: left;
+    letter-spacing: 0.5vw;
+    width: 40vw;
+    line-height: 9vh;
+    padding-left: 17.6%;
+    color: white;
+}
+
+.mainHeadings_animation h1{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 3.5vw;
+    padding-top: 19%;
+    padding-bottom: 5%;
+    text-align: left;
+    letter-spacing: 0.5vw;
+    line-height: 9vh;
+    padding-left: 9.5%;
+    color: white; 
+    bottom: 9.4vh;
+    position: relative;
+}
+
+.mainHeadings_graphicDesign h1{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 3.5vw;
+    text-align: left;
+    letter-spacing: 0.5vw;
+    line-height: 9vh;
+    padding-left: 12.8%;
+    color: white; 
+    position: relative;
+    padding-bottom: 11.3vh;
+}
+
+#misc p{
+    font-family: "NTR", sans-serif;
+    width: 31vw;
+    position: relative;
+    padding-left: 12%;
+    color: white;
+}
+
+#misc_animation p{
+    font-family: "NTR", sans-serif;
+    position: relative;
+    padding-left: 9.5%;
+    color: white;
+    bottom: 81px;
+    width: 60%;         /* Default large screen look */
+    max-width: 90ch; /* control readable line length */
+    width: auto;     /* let it grow/shrink naturally */
+}       
+
+#misc_graphicDesign p{
+    font-family: "NTR", sans-serif;
+    position: relative;
+    padding-left: 12.5%;
+    color: white;
+    bottom: 4.3vh;
+    font-size: 1em;
+    max-width: 68ch; /* control readable line length */
+    width: auto;     /* let it grow/shrink naturally */
+}
+
+#misc_webDesign p{
+    font-family: "NTR", sans-serif;
+    width: 25vw;
+    position: relative;
+    padding-left: 17.6%;
+    color: white;
+    overflow: auto;
+    height: 19vh;
+    padding-right: 2vw;
+}
+
+#misc_webDesign p::-webkit-scrollbar {
+    width: 12px; 
+    height: 5vh;
+}
+
+#misc_webDesign p::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.055); 
+    border-radius: 6px;
+}
+
+#misc_webDesign p::-webkit-scrollbar-thumb {
+    background:#ffffff38;
+    border-radius: 6px;
+}
+
+#misc p a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #2F586E;
+}
+
+#misc p a:hover{
+    color: #d09738;
+}
+
+.word-revealText {
+  opacity: 1;
+  transform: translateY(20px);
+  animation: reveal 1.1s ease forwards;
+  animation-delay: 0s;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Flex container */
+
+#animation-content, #graphicDesign-content, #webDesign-content, #photography-content {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 15vh;
+  margin-top: 4vh;
+  width: 99vw; 
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.mainHeadings_photography {
+  background-color: black;
+  flex: 0 0 45%;
+  box-sizing: border-box;
+  height: 94vh;
+  flex-direction: column;
+}
+
+#hero-image {
+  flex: 1;
+  width: 100%;
+  height: 94vh;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.mainHeadings_animation {
+  flex-direction: column;
+  flex: 0 0 clamp(60%, 76.2%, 100%);
+  background-color: black;
+  color: white;
+  height: 87.7vh;
+}
+
+#hero-imageAnimation {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainHeadings_graphicDesign {
+  flex-direction: column;
+  flex: 0 0 55%;
+  height: 87.6vh;
+  background-color: black;
+}
+
+#hero-imageGraphicDesign {
+  flex: 1;
+  height: 87.6vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mainHeadings_webDesign{
+    background-color: black;
+    flex: 0 0 40%;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+#hero-imageWebDesign{
+  flex: 1;
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#hero-image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; 
+    position: relative;
+}
+
+#hero-image div, #hero-imageGraphicDesign div, #hero-imageAnimation div, #hero-imageWebDesign div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.carousel-item_photography, .carousel-item_graphicDesign {
+  flex: 0 0 25%;
+  position: relative; /* Take 25% width of the track */
+}
+
+.carousel-item_graphicDesign, .carousel-item_photography, .carousel-item_webDesign{
+    height: 100%;
+}
+
+.carousel-item_animation {
+  position: relative;
+  min-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 25%;
+  overflow: hidden;
+  background-color: black;
+  height: 87.65vh;
+}
+
+.carousel-item_webDesign {
+  position: relative;
+  flex: 0 0 100%; /* One full screen width */
+  display: flex;
+}
+
+.carousel-item_photography img {
+  width: 94.1%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item_graphicDesign img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item_animation img {
+  height: 100%;
+  object-fit: contain; /* Ensures full image is visible without cropping */
+  display: block;
+}
+
+.carousel-item_webDesign img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.my-video {
+  height: 100%;
+  width: auto;    
+  display: block; 
+  object-fit: cover;  
+  margin: 0;
+  z-index: 1;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: 400%; /* 100% x number of images */
+    transition: transform 1s ease-in-out;
+    height: 100%;
+}
+
+.carousel-trackAnimation {
+  display: flex;
+  width: 400%; /* updated to match visible area */
+  transition: transform 1s ease-in-out;
+  height: 100%;
+}
+
+.carousel-trackWebDesign {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carouselButtons_photography{
+    margin-top: 70vh;
+    margin-left: 17.5vw;
+}
+
+.carouselButtons_graphicDesign{
+    margin-top: 62vh;
+    margin-left: 10.5vw;
+}
+
+.carouselButtons_animation{
+    margin-top: 65vh;
+    margin-left: 3.3vw;
+}
+
+.carouselButtons_webDesign{
+    margin-top: 45vh;
+    margin-left: 18vw;
+}
+
+.carousel-item_photography div, .carousel-item_graphicDesign div, .carousel-item_animation div, .carousel-item_webDesign div {
+    text-align: center;
+    font-family: "NTR", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.35vw;
+    font-size: 1.25em;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.471));
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    z-index: 1;
+    line-height: 4.2vh;
+    cursor: pointer;
+}
+
+.carousel-item_photography div{
+    width: 19vw;
+}
+
+.carousel-item_graphicDesign div {
+    padding-left: 2vw;
+    padding-right: 1.7vw;
+    width: 19vw;
+}
+
+.carousel-item_animation div{
+    width: 18vw;
+    padding-top: 2.2vh;
+}
+
+.carousel-item_webDesign div{
+    width: 23vw;
+}
+
+.carouselButtons_photography:hover, .carouselButtons_graphicDesign:hover, .carouselButtons_animation:hover, .carouselButtons_webDesign:hover{
+    background-color:#2F586E;
+    color: white;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-containerAnimation {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.carousel-containerWebDesign {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#overlayGallery_graphicDesign.hidden, #overlayGallery_webDesign.hidden, #overlayGallery_animation.hidden, #overlayGallery_photography.hidden {
+    display: none;
+}
+
+#overlayGallery_graphicDesign, #overlayGallery_webDesign, #overlayGallery_animation, #overlayGallery_photography {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  overflow: hidden;  /* ✅ This prevents scrollbars */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#overlayContent_graphicDesign, #overlayContent_animation, #overlayContent_webDesign, #overlayContent_photography {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;  
+  overflow-y: auto; 
+  scrollbar-width: none;      /* ✅ Firefox */
+  -ms-overflow-style: none;   /* ✅ IE/Edge */
+}
+
+.overlayImagesContainer.one-column {
+  column-count: 1;
+   max-width: 40vw; 
+}
+
+.overlayImagesContainer.two-columns {
+  column-count: 2;
+   max-width: 80vw;  
+}
+
+.overlayImagesContainer.three-columns {
+  column-count: 3;
+}
+
+.overlayImagesContainer{
+  column-count: 3; /* Adjust for responsiveness */
+  column-gap: 2rem;
+  overflow-x: visible;  
+  padding-top: 15vh;               /* Space from top */
+  padding-bottom: 12vh;            /* Space from bottom */
+  max-width: 80vw;  
+  margin: 0 auto;
+  justify-content: center;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
+}
+
+#overlayContent_graphicDesign::-webkit-scrollbar,
+#overlayContent_webDesign::-webkit-scrollbar,
+#overlayContent_animation::-webkit-scrollbar,
+#overlayContent_photography::-webkit-scrollbar {
+  display: none; /* ✅ Chrome, Safari, Opera */
+}
+
+#overlayImagesContainer_graphicDesign img, #overlayImagesContainer_webDesign img, #overlayImagesContainer_animation img, #overlayImagesContainer_photography img  {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem; /* vertical gap between stacked images */
+}
+
+#overlayImagesContainer_animation video{
+ margin-bottom: 2rem;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  overflow: visible;
+  opacity: 0;
+  position: relative; /* ⚠️ Required if you want precise control */
+  transition: 
+    opacity 0.7s ease-in,
+    transform 0.5s ease;
+}
+
+.image-wrapper img {
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.image-wrapper.fade-in {
+  opacity: 1;
+}
+
+#backToMain {
+    position: fixed;
+    top: 3.5rem;
+    right: 3.5rem; /* Or right: 2rem; depending on layout */
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    z-index: 10005;
+    transition: transform 0.3s ease;
+    background-image:url(../images/logo_favicon_icons/backArrow_normal.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#backToMain:hover {
+  background-image: url(../images/logo_favicon_icons/backArrow_hover.png);
+}
+
+/*---------------ABOUT DESIGNER PAGE----------------*/
+
+#heroBanner{
+    background-image: url(../images/misc_graphics/professional-portrait.png);
+    background-size:cover;
+    width: 99vw;
+    height: 61vh;
+    background-repeat: no-repeat;
+    padding-top: 2vh;
+    top: 3vh;
+    position: relative;
+}
+
+#heroBanner h1{
+  position: relative;
+  left: 12vw;
+  top: 112px;
+  color: white;
+  font-size: clamp(0.8rem, 5.6vw, 6rem); 
+  width: 50vw;
+  line-height: 110px;
+  letter-spacing: 0.01em;
+  z-index: 1;
+  padding: 0;
+}
+
+.highlight-box {
+    position: absolute;
+    height: 9vh;
+    background-color: rgb(0, 0, 0); 
+    z-index: 1;
+    left: 11%;
+}
+
+.highlight-box.top {
+    margin-top: 160px;
+    width: 45.5vw;
+}
+
+.highlight-box.bottom {
+    margin-top: 270px;
+    width: 23vw;
+}
+
+.hero-text-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about_me-pageBackground{
+    background-image: url(../images/misc_graphics/about_Bg.png);
+    background-size:contain;
+    width: 99vw;
+    height: 200vh;
+    background-repeat: no-repeat;
+}
+
+.about_me-headings{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    margin-left: 11vw;
+    gap: 3vw;
+}
+
+.about_me-headings h1{
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 4.4vw;
+    text-align: left;
+    left: 47vw;
+    letter-spacing: 0.7vw;
+    line-height: 10vh;
+}
+
+.about_me-headings h2{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    position: relative;
+    font-size: 2vw;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.about_me-headings h3{
+    font-family: "NTR", sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    margin: 1vh 0;
+    color:#2F586E;
+}
+
+.about_me-headings p{
+    font-family: "NTR", sans-serif;
+    width: 33vw;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.about_me-headings h2,
+.about_me-headings h3,
+.about_me-headings p {
+  text-align: left;
+}
+
+.about_me-headings > div {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#story, #expertise, #design_philosophy, #unique_selling_points{
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 3vh;
+}
+
+.download_cv {
+    font-family: "NTR", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.35vw;
+    font-size: 1.25em;
+    background-color: black;
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    width: 40vw;
+    height: 11vh;
+    margin-top: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18vw;
+}
+
+.download_cv:hover {
+    background-color: #2F586E;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.line-wrapper {
+  display: block;
+  opacity: 0;
+  transition: opacity 1.8s ease;
+}
+
+.line-wrapper.visible {
+  opacity: 1;
+}
+
+/*---------------CONTACT PAGE----------------*/
+
+.heading-section{
+  position: absolute;
+  margin-left: 8vw;
+  padding-top: 70px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 150vh;
+  width: 99vw;
+  padding-bottom: 180px;
+}
+
+.heading-section h1{
+  color: black;
+  padding-bottom: 50px;
+}
+
+.heading-section h2{
+  color: black;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.5em;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading-section h1,
+.heading-section h2,
+#heroBanner h1 {
+  opacity: 0; /* hidden by default */
+  transform: translateY(-20px);
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* Triggered animation */
+.heading-section h1.animate-in,
+.heading-section h2.animate-in,
+#heroBanner h1.animate-in {
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.form-column{
+  margin-left: 6vw;
+  margin-top: 380px;
+}
+
+.info-column{
+  margin-top: 380px;
+}
+
+.form-column, .info-column {
+  padding: 2em;
+  width: 40%;
+  box-sizing: border-box;
+}
+    
+.contact-form input {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 4px solid #656565;
+  font-size: 1.3em;
+  transition: border-color 0.3s ease;
+  background-color: #7777777b;
+  width: 100%;
+  font-family: "TikTok Sans", sans-serif;;
+}
+
+.contact-form input:focus {
+  border-color: #091620;
+  outline: none;
+}
+
+.contact-form input::placeholder {
+  color: #8e8e8e;
+  transition: opacity 0.2s ease;
+  font-family: "TikTok Sans", sans-serif;;
+}
+
+.contact-form input:focus::placeholder {
+  opacity: 0;
+}
+
+.contact-form button {
+  margin-top: 3em; 
+}
+
+button {
+ text-align: center;
+ font-family: "NTR", sans-serif;
+ text-decoration: none;
+ border: none;
+ font-weight: 500;
+ letter-spacing: 0.35vw;
+ font-size: 1.1em;
+ background-color: #091620;
+ color: white;
+ filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+ width: 12vw;
+ height: 7.5vh;
+ padding-top: 5px;
+ transition: background-color 0.2s ease;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: #2F586E;
+ color: black;
+ font-weight: 700;
+ transition: 0.5s;
+}
+
+.info-column h2 {
+  margin-top: 10vh;
+  font-size: 1em;
+  font-family: "NTR", sans-serif;
+  padding-bottom: 2vh;
+}
+
+.info-column a {
+  font-size: 1.5em;
+  font-family: "TikTok Sans", sans-serif;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+  margin-bottom: 0.2em;
+  font-weight: 400;
+}
+
+.info-column a:hover {
+  font-weight: 500;
+}
+
+.info-column a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2.5px; /* space below the text */
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.8s ease-out;
+}
+
+.info-column a:hover::after {
+  width: 100%;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem 3rem;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  height: 250px;
+}
+
+.popup-content h2 {
+  margin-bottom: 1rem;
+  font-family:"TikTok Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.popup-content p{
+  font-family: "NTR", sans-serif;
+  font-size: 1.3rem;
+  line-height: 28px;
+}
+
+.popup-content button {
+  margin-top: 1.6rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-bottom: 50px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup-overlay.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0; /* Start hidden, animate to visible */
+}
+
+.icon-wrapper{
+    width: 20vw;
+    height: 10vh;
+}
+
+.email-icon{
+    width: 7.4vw;
+} 
+
+.phone-icon {
+    width: 7vw;
+    margin-bottom:0.8vh;
+    padding-left: 0.5vw;
+}
+
+#mobileWarning {
+    display: none;
+    text-align: center;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/*--------Below is the Tablet Styling-----------*/
+@media screen and (min-width: 677px) and (max-width: 1300px) {
+    
+    body > *:not(#mobileWarning) {
+        display: none !important;
+    }
+   
+    #mobileWarning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 5vh 5vw;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    #mobileWarning img{
+        width: 400px;
+        height: auto;
+        display: block;
+    }
+
+    #mobileWarning h1{
+       position: relative;
+       font-family:"TikTok Sans", sans-serif;
+       font-size: 28px;
+       width: 60vw;
+       color: rgba(0, 0, 0, 0.712);
+       font-weight: bold;
+       letter-spacing: 1vw;
+       margin: 0;
+       padding: 0;
+       height: auto;
+    }
+
+    #mobileWarning p{
+        position: relative;
+        font-family: "NTR", sans-serif;
+        font-size: 17.5px;
+        width: 60vw;
+        margin: 0;
+        padding-top: 50px;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/*---Below is the styling for Smartphone Screens---*/
+
+@media screen and (max-width: 676px){
+    
+    body > *:not(#mobileWarning) {
+      display: none !important;
+    }
+
+    #mobileWarning {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+      padding: 5vh 5vw;
+      box-sizing: border-box;
+      background-color: white;
+      position: fixed;
+    }
+
+    #mobileWarning img{
+        width: 250px;
+        height: auto;
+        display: block;
+    }
+
+    #mobileWarning h1{
+       position: relative;
+       font-family:"TikTok Sans", sans-serif;
+       font-size: 28px;
+       width: 60vw;
+       color: rgba(0, 0, 0, 0.712);
+       font-weight: bold;
+       letter-spacing: 1vw;
+       margin: 0;
+       padding: 0;
+       height: auto;
+    }
+
+    #mobileWarning p{
+        position: relative;
+        font-family: "NTR", sans-serif;
+        font-size: 16px;
+        width: 55vw;
+        margin: 0;
+        padding-top: 40px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------*/

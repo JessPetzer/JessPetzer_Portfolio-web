@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design | OJ Portfolio</title>
+    <!-- LINK TO EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="css-assets/styles.css">
+    <!-- PRELOADED FONTS -->
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/tiktoksans/v5/xyz.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/ntr/v13/xyz.woff2" type="font/woff2" crossorigin>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="responsiveMenu" onclick="slideOn()"></div>
+        <div id="responsiveClose" onclick="slideOff()"></div>
+        <div id="headerLogo"></div>
+        <div id="social-top">
+            <a id="linkedIn_link_icon-top" href="https://www.linkedin.com/in/jessica-petzer05/" target="_blank"></a>
+            <a id="instagram_link_icon-top" href="https://www.instagram.com/_the_flipflop_chronicles_?igsh=MXdhdm5ndHhtcnR5YQ==" target="_blank"></a>
+            <a id="behance_link_icon-top" href="https://www.behance.net/jessicapetzer" target="_blank"></a>
+        </div>
+        <nav id="topLinks">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="designerInfo.html">DESIGNER INFO</a></li>
+                <li id="dropDown-menuCurrent" class="dropdown-wrapper"><a>WORK PORTFOLIO</a>
+                    <div class="hover-bridge"></div>
+                    <ul class="subMenu">
+                        <ul id="subMenu_container">
+                            <li><a href="graphicDesign-subPage.html">GRAPHIC DESIGN</a></li>
+                            <li><a href="animations-subPage.html">ANIMATION</a></li>
+                            <li><a href="photography-subPage.html">PHOTOGRAPHY</a></li>
+                            <li id="current-subPage"><a href="#" style="pointer-events: none;">WEB DESIGN</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><a href="contactPage.html">GET IN TOUCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <div id="webDesign-content">
+            <div class="mainHeadings_webDesign">
+                <h1>WEB DESIGN</h1>
+                <div id="misc_webDesign">
+                    <p class="word-revealText">With roots in web development, I’ve built a strong foundation in HTML and CSS throughout my studies, while steadily growing my skills in JavaScript & Python. I feel I thrive in the space where technical problem-solving meets creative design — the thrill of finally solving a complex bug after endless patience and persistence and the satisfaction when everything finally 'clicks' (pun intended). In today’s digital world where first impressions matter most, I see web design as more than clean code or good layout & visuals, but as a powerful way to shape how audiences connect and resonate with a brand. Being able to influence that moment through thoughtful design and functionality is something I consider a powerful tool in my creative arsenal. I don’t just design websites — I create lasting impressions. </p>
+                </div>
+            </div>
+
+            <article id="hero-imageWebDesign">
+                <div class="carousel-containerWebDesign">
+                    <div class="carousel-trackWebDesign">
+                        <div class="carousel-item_webDesign">
+                            <img src="images/webDesign/UI_AfricologyDesign.png" alt="UX/UI Design">
+                            <div class="carouselButtons_webDesign">VIEW <br> UI / UX DESIGN</div>
+                            <div class="carouselButtons carouselButtons_webDesign" data-category="webDesign" data-set="UI / UX DESIGN">VIEW <br> UI / UX DESIGN</div>
+                        </div>
+                        <div class="carousel-item_webDesign">
+                            <img src="images/webDesign/wireframing/AR_Wireframes.png" alt="Wireframes- website">
+                            <div class="carouselButtons carouselButtons_webDesign" data-category="webDesign" data-set="CONCEPTUALISATION & WIREFRAMING">VIEW <br> CONCEPTUALISATION <br> & WIREFRAMING</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer id="footer_webDesign">
+        <!--Website footer-->
+        <div id="footerContent">
+            <img src="images/misc_graphics/oxjLogo_favicon.png" alt="OxJ Website Logo">
+            <!--copyright information-->
+            <p>COPYRIGHT &copy; 2024 OxJ, ALL RIGHTS RESERVED | Powered by "GitHub Pages" Web Hosting</p>
+            
+            <div id="social-bottom">
+                <a id="linkedIn_link_icon-bottom" href="https://www.linkedin.com/in/jessica-petzer05/" target="_blank"></a>
+                <a id="instagram_link_icon-bottom" href="https://www.instagram.com/_the_flipflop_chronicles_?igsh=MXdhdm5ndHhtcnR5YQ==" target="_blank"></a>
+                <a id="behance_link_icon-bottom" href="https://www.behance.net/jessicapetzer" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function slideOn(){
+            document.getElementById('responsiveMenu').style.display = 'none';
+            document.getElementById('responsiveClose').style.display = 'block';
+            document.getElementById('topLinks').style.left = '0%';
+        }
+
+        function slideOff(){
+            document.getElementById('responsiveMenu').style.display = 'block';
+            document.getElementById('responsiveClose').style.display = 'none';
+            document.getElementById('topLinks').style.left = '100%';
+        }
+    </script>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js-assets/scripts.js"></script>
+
+    </div>
+
+     <div id="overlayGallery_webDesign" class="hidden">
+        <div id="overlayContent_webDesign" class="overlayContent">
+            <div id="backToMain" alt="Back Button"></div>
+            <div id="overlayImagesContainer_webDesign" class="overlayImagesContainer"></div>
+        </div>
+    </div>
+
+</body>
+</html>
